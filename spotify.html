@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="spotify.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="left">
+            <img id="song-image"
+                src="https://media.istockphoto.com/id/1131352330/photo/dynamic-microphone-on-music-sheet.jpg?s=2048x2048&w=is&k=20&c=GBXo7OsLBarvtzBzz6m678kPcrmg17n7RKgyyfy-NwQ="
+                alt="songImage">
+        </div>
+        <div id="right">
+            <div id="song-container">
+
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div id="icons">
+            <h3 id="backward"><i class="ri-skip-left-fill"></i></h3>
+            <h3 id="play"><i class="ri-play-circle-line"></i></h3>
+            <h3 id="forward"><i class="ri-skip-right-fill"></i></h3>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Uska hi bana</span>
+            <span id="currentTime">0:00</span> / <span id="totalDuration">0:00</span>
+        </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.song-items img {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+#main {
+  height: 85%;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  padding: 40px;
+}
+#left {
+  background-color: rgba(105, 105, 105, 0.164);
+  height: 90%;
+  width: 45%;
+  padding: 20px 23px;
+  display: flex;
+  align-items: center;
+}
+#left #song-image {
+  height: 30vw;
+  width: 100%;
+  background-position: center;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#right {
+  background: linear-gradient(
+    rgba(120, 120, 124, 0.377),
+    rgba(143, 128, 128, 0.075)
+  );
+  height: 90%;
+  width: 55%;
+  padding: 20px 30px;
+}
+#right .song-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#right .song-items #pause-icon {
+  cursor: pointer;
+}
+#bottom {
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+}
+#bottom #myProgressBar {
+  width: 75%;
+  margin-bottom: 15px;
+}
+#bottom #icons {
+  display: flex;
+  margin-top: 4px;
+  cursor: pointer;
+}
+#bottom #icons #backward {
+  margin-right: 3px;
+}
+#bottom #icons #play {
+  margin-right: 3px;
+}
+.songInfo {
+  position: absolute;
+  left: 13vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+/* media queries */
+@media only screen and (max-width: 500px) {
+  #main {
+    height: 75%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  #left {
+    display: none;
+  }
+
+  #right {
+    background: linear-gradient(
+      rgba(120, 120, 124, 0.377),
+      rgba(143, 128, 128, 0.075)
+    );
+    height: 100%;
+    width: 95%;
+    padding: 20px 30px;
+  }
+}
