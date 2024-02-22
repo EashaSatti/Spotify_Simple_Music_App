@@ -98,7 +98,7 @@ function updateSongImage(songId) {
     songContainer.style.backgroundImage = "none"; // Remove background image when song is selected
   } else {
     leftSongImg.style.display = "none"; // Hide the image element
-    songContainer.style.backgroundImage =
+    leftSongImg.style.backgroundImage =
       "url(https://media.istockphoto.com/id/1433737803/photo/listening-to-music-on-a-mobile-phone-music-player-with-headphones-3d-rendering-music.jpg?s=2048x2048&w=is&k=20&c=OiUVGWcOOgbwT5dzVJjmh6i8zdFOXrymsV9mvLEV8s8=)"; // Set background image when no song is selected
   }
 }
